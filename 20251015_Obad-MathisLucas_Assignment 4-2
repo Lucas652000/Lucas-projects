@@ -1,0 +1,27 @@
+# Productivity Bonus Calculator
+
+# Input Section
+name= input("Enter employee's name: ")
+shifts = int(input("Enter number of shifts worked: "))
+transactions = int(input("Enter number of transactions: "))
+transaction_value = float(input("Enter transaction dollar value: "))
+
+# Calculate productivity score
+productivity_score = transaction_value / transactions / shifts
+
+# Determine bonus using nested if statements
+if productivity_score <= 30:
+    bonus = 50.0
+else:
+  if productivity_score <=69:
+      bonus = 75.0
+  else:
+    if productivity_score <= 199:
+       bonus = 100.0
+    else:
+       bonus = 200.0
+# Output Section
+print("Employee Name: ", name)
+print("Employee Bonus: $", bonus)
+
+
